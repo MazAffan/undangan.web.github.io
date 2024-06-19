@@ -1,0 +1,142 @@
+*,body {
+  padding: 0;
+  margin: 0;
+  font-family: Sans-Serif;
+  overflow: hidden;
+}
+
+.warning {
+  text-align: center;
+}
+.container, 
+.intro, 
+.cnt-tiga {
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .warning {
+    display: none;
+  }
+  .container {
+    display: block;
+  }
+  /* start */
+  .cnr-head {
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* content  satu*/
+  .cnt-satu button {
+    background-color: darkblue;
+    border: none;
+    font-size:  15px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .cnt-satu button:active {
+    color: deepskyblue;
+    text-shadow: 0 0 5px skyblue;
+  }
+  .nameUndangan {
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+  .nameUndangan h1 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+  .yourName {
+    text-align: left;
+    border: solid 1.5px aliceblue;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 5px white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .yourName input {
+    border: solid 1px skyblue;
+    border-radius: 30px;
+    box-shadow: 0 0 10px deepskyblue;
+    padding: 8px;
+    width: 50%;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: text;
+   }
+   .yourName p:nth-child(2) {
+     margin-bottom: 10px;
+   }
+  /* content satu end */
+  
+  /* content dua */
+  .cnr-body {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+  }
+  .cnt-dua {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+  }
+  .jadwal {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    font-weight: bold;
+  }
+  /* content dua end */
+  
+  /* content tiga */
+  .cnt-tiga {
+    text-align: center;
+    background-color: blueviolet;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: block;
+  }
+  .cnt-tiga p:nth-child(2) {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .cnt-tiga p:nth-child(3) {
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  .cnt-tiga button {
+    background-color: deepskyblue;
+    padding: 5px;
+    border-radius: 30px;
+    animation: maaf ease 1s;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+  }
+  @keyframes maaf {
+    0% {
+      opacity: 0;
+      scale: 0;
+    }
+    100% {
+      opacity: 100;
+      scale: 1;
+    }
+  }
+  .cnt-tiga button:active {
+    background-color: darkblue;
+    color: deepskyblue;
+    text-shadow: 0 0 5px skyblue;
+  }
+  /* content tiga end */
+}
